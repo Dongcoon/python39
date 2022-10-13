@@ -1,4 +1,4 @@
-import random
+import random as rnd
 # ex) 주민번호에서 생년월, 일 성별을 추출해서 변수에 저장
 error = 0
 
@@ -75,7 +75,7 @@ myLotto[1] = input('두번째 로또번호')
 myLotto[2] = input('세번째 로또번호')
 
 for i in range(3):
-    lotto[i] = str(random.randint(0, 9))
+    lotto[i] = str(rnd.randrange(1, 45))
 if(myLotto[0]==lotto[0])&(myLotto[1]==lotto[1])&(myLotto[2]==lotto[2]):
     print('축하합니다 당첨입니다!')
 else:
