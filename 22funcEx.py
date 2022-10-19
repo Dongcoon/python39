@@ -61,12 +61,14 @@ def checkChinaZodiac(year):
     year = str(year)
     sipgan = ('신', '임', '계', '갑', '을', '병', '정', '무', '기', '경',)
     sipizy = ('유', '술', '해', '자', '축', '인', '묘', '진', '사', '오', '미', '신')
+    animal = ('닭','개','돼지','쥐','소','호랑이','토끼','용','뱀','말','양','원숭이')
     idx1 = int(year[3:]) - 1
     idx2 = int(year) % 12 - 1
     fYear = sipgan[idx1]
     lYear = sipizy[idx2]
-    print(fYear + lYear, '년')
+    print(f'{fYear + lYear}년\n{animal[idx2]}띠')
 
 computeCharge(1000,48000)
 checkCredit(540926)
-checkChinaZodiac(1988)
+checkChinaZodiac(1994)
+
